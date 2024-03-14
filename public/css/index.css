@@ -1,0 +1,179 @@
+/* Styles pour la section principale de la page (titre) */
+.mainSection h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 200px;
+	font-weight: 100;
+	font-family: var(--text-title);
+	line-height: 100px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/* Styles pour le survol des catégories d'agents */
+.mainSection h1 span {
+	font-weight: bold;
+	color: var(--text-accent);
+}
+
+/* Styles pour les catégories d'agents */
+.agentsCategories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	height: 90vh;
+	width: 100vw;
+	background-color: var(--text-secondary);
+	padding: 8rem 0;
+}
+
+/* Styles pour le titre des catégories d'agents */
+.agentsCategories h1.title {
+	font-family: var(--text-title);
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--text-primary);
+	letter-spacing: 0.1rem;
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
+/* Styles pour la ligne sous le titre des catégories d'agents */
+.agentsCategories h1.title::after {
+	content: "";
+	display: block;
+	width: 20rem;
+	height: 2px;
+	background: var(--text-primary);
+	margin: auto;
+}
+
+/* Styles pour les catégories individuelles d'agents */
+.agentsCategories .categories {
+	height: 100%;
+}
+
+/* Styles pour le carrousel des catégories d'agents */
+.agentsCategories .categories .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+/* Styles pour chaque catégorie d'agent dans le carrousel */
+.agentsCategories .categories .carousel .category {
+	width: 25vw;
+	height: 25vh;
+	margin-left: 1rem;
+	position: relative;
+}
+
+/* Styles pour l'image de chaque catégorie d'agent */
+.agentsCategories .categories .carousel .category .image {
+	height: 100%;
+	width: 100%;
+	border-radius: 0.5rem;
+}
+
+/* Styles pour le titre de chaque catégorie d'agent */
+.agentsCategories .categories .carousel .category h1 {
+	position: absolute;
+	font-size: 1rem;
+	font-weight: bold;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: top 0.2s linear;
+}
+
+/* Styles pour le survol du titre de chaque catégorie d'agent */
+.agentsCategories .categories .carousel .category h1 {
+	top: 110%;
+}
+
+/* Styles pour l'icône de chaque catégorie d'agent */
+.agentsCategories .categories .carousel .category svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	fill: var(--text-accent);
+	height: 50%;
+	width: 50%;
+}
+
+/* Styles pour l'image de chaque catégorie d'agent */
+.agentsCategories .categories .carousel .category img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+}
+
+/* Styles pour le survol des catégories d'agents */
+.mostKnownDeserts .desertsList .carousel .category:hover > .overlay {
+	opacity: 0;
+}
+
+/* Styles pour le pied de page */
+.footer {
+	height: 20vh;
+	width: 100vw;
+	background: #fff;
+	color: var(--text-secondary);
+	padding: 2rem 5rem;
+}
+
+/* Styles pour la grille du pied de page */
+.footer .grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/* Styles pour la partie gauche du pied de page */
+.footer .grid .leftSide {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Styles pour la liste non ordonnée de la partie droite du pied de page */
+.footer .grid .rightSide ul {
+	list-style-type: none;
+}
+
+/* Styles pour les liens de la liste du pied de page */
+.footer .grid .rightSide ul a {
+	text-decoration: none;
+	color: var(--text-secondary);
+}
+
+/* Styles pour le titre du pied de page */
+.footer h1 {
+	font-family: var(--text-title);
+	width: 15vw;
+	line-height: 1.5rem;
+}
+
+/* Styles pour les effets de survol des liens du pied de page */
+.footer a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: var(--text-secondary);
+	transition: width 0.3s;
+}
+
+/* Styles pour le survol des liens du pied de page */
+.footer a:hover::after {
+	width: 100%;
+}

@@ -1,0 +1,45 @@
+section.content {
+	height: 100vh;
+	width: 100vw;
+
+	background-color: var(--text-secondary);
+
+	padding: 8rem 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+section.content h1 {
+	font-family: var(--text-title);
+	font-size: 3rem;
+	font-weight: 700;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	color: var(--text-primary);
+	letter-spacing: 0.1rem;
+	line-height: 1.2;
+
+	margin-bottom: 2rem;
+}
+
+section.content h1::after {
+	content: "";
+	display: block;
+
+	width: 25rem;
+	height: 2px;
+
+	background: var(--text-primary);
+
+	margin: auto;
+}
+
+section.content p.description {
+	width: 60%;
+	text-align: justify;
+}

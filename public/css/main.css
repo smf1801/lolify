@@ -1,0 +1,144 @@
+/* Importation des polices depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+/* Réinitialisation des styles par défaut */
+* {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+
+	--text-title: "Preahvihear", sans-serif; /* Définition de la police pour les titres */
+	--text-base: "Ubuntu", sans-serif; /* Définition de la police de base */
+
+	--text-primary: #f7e8e8; /* Définition de la couleur principale du texte */
+	--text-secondary: #141414; /* Définition de la couleur secondaire du texte */
+	--text-accent: #74d258; /* Définition de la couleur d'accentuation du texte */
+}
+
+/* Styles pour le corps de la page */
+body {
+	height: 100vh;
+	width: 100vw;
+	font-family: var(--text-base);
+	color: var(--text-primary);
+	background-color: var(--text-secondary);
+	overflow-x: hidden; /* Empêcher le défilement horizontal */
+}
+
+/* Styles pour la section principale de la page */
+.mainSection {
+	position: relative;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* Styles pour le logo de la barre de navigation */
+nav .navLogo a {
+	font-family: var(--text-title);
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--text-primary);
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-left: 5rem;
+}
+
+/* Styles pour les liens de navigation dans la barre */
+nav .navLinks {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+/* Styles pour les effets de survol des liens de navigation */
+nav .navLinks a {
+	font-size: 1rem;
+	margin-right: 5rem;
+	color: var(--text-primary);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Styles pour les effets de survol des liens de navigation */
+nav .navLinks a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: var(--text-primary);
+	transition: width 0.3s;
+}
+
+/* Styles pour les effets de survol des liens de navigation */
+nav .navLinks a:hover::after {
+	width: 100%;
+}
+
+/* Styles pour le pied de page */
+.footer {
+	height: 20vh;
+	width: 100vw;
+	background: #fff;
+	color: var(--text-secondary);
+	padding: 2rem 5rem;
+}
+
+/* Styles pour la grille du pied de page */
+.footer .grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/* Styles pour la partie gauche du pied de page */
+.footer .grid .leftSide {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Styles pour la liste non ordonnée de la partie droite du pied de page */
+.footer .grid .rightSide ul {
+	list-style-type: none;
+}
+
+/* Styles pour les liens de la liste du pied de page */
+.footer .grid .rightSide ul a {
+	text-decoration: none;
+	color: var(--text-secondary);
+}
+
+/* Styles pour le titre du pied de page */
+.footer h1 {
+	font-family: var(--text-title);
+	width: 15vw;
+	line-height: 1.5rem;
+}
+
+/* Styles pour les effets de survol des liens du pied de page */
+.footer a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: var(--text-secondary);
+	transition: width 0.3s;
+}
+
+/* Styles pour le survol des liens du pied de page */
+.footer a:hover::after {
+	width: 100%;
+}
